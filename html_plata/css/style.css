@@ -1,0 +1,55 @@
+/* fonte */
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+/* Geral */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(218, 218, 218);
+}
+
+/* cabeçona */
+header{
+    position: relative;
+    max-width: 1050px;
+    margin: 5px auto;
+
+    border-radius: 2px;
+    box-sizing: border-box;
+    
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.473);
+    background-color: rgb(168, 168, 168);
+}
+
+/* navegação, menu */
+.menu{
+    display: flex;
+    justify-content: space-between; 
+}
+.menu > a{
+    padding: 5px 10px;
+    
+    font-weight:bold;
+    text-decoration: none;
+    font-size: 30px;
+    
+    color: white;
+}
+.menu ul {
+    display: flex;
+}
+.menu ul li{
+    margin: 0 20px;
+    padding: 0 10px;
+    list-style: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.fotos_plantas img{
+    width: 500px;
+}
