@@ -1,0 +1,116 @@
+
+/* div que engloba tudo */
+#container{
+    max-width: 99%;
+    margin: -30px auto 20px;
+
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+/* seta de rolagem, para o menu */
+.seta_navegaçao img{
+    position: fixed;
+    right: 15px;    
+    width: 40px;     
+    bottom: 11.9%;   
+    cursor: pointer;  
+}
+.seta_navegaçao img:hover {
+    transform: scale(1.5);
+}
+
+/* todas sections */
+.all_sections{
+    justify-content: center;
+    border-radius: 5px;
+    text-align: center;
+
+    box-sizing: border-box;
+    padding: 5px;
+
+}
+
+/* Botoes geral */
+.btn button {
+    position: absolute;
+    right:42%;
+    bottom: -20px;
+
+    padding: 10px;
+
+    border: 2.5px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    font-size: 18px;
+    font-weight: bold;
+
+    transition: .5s  ease-in-out;
+
+    color: white;
+    background:none;
+    
+}
+.btn button:hover {
+    animation: bounce 1s;
+
+    color:black;
+    background:white;
+}
+
+/* Animaçao do botao  */
+@keyframes bounce {
+    0%, 20%, 60%, 100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-40px);
+    }
+
+    80% {
+        -webkit-transform: translateY(-20px);
+        transform: rotateY(-40deg)
+
+    }
+}
+
+/* Primeira section, Home */
+#home{
+    height: 98vh;
+
+    padding: 0;
+
+    background-image: url(/img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#home .div_textos {
+    position: relative;
+    top: 20%;
+
+    text-shadow: 10px 5px 20px black;
+
+    color: white;
+}
+#home .div_textos h1{
+    text-shadow: 0 0 10px white, 0 0 30px white, 0 0 100px white;
+    
+    font-size: 60px;
+    letter-spacing: 35px;
+}
+#home .div_textos h4{
+    font-size: 30px;
+    
+    letter-spacing: 4px;
+}
+#home .div_textos p{
+    font-size: 25px;
+   
+    margin: 10px;
+}
+
