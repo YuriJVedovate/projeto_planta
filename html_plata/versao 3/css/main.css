@@ -1,0 +1,31 @@
+/* div que engloba tudo */
+#container{
+    max-width: 98%;
+    margin: 20px auto;
+
+    box-sizing: border-box;
+    border-radius: 10px;
+    
+}
+
+/* todas sections */
+.all_sections{
+    justify-content: center;
+    border-radius: 5px;
+    text-align: center;
+
+    box-sizing: border-box;
+    padding: 5px;
+
+}   
+
+/* Primeira section, Home */
+#home{
+    height: 98vh;
+
+    background-image: url(/img/fundo2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
