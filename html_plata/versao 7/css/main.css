@@ -5,7 +5,7 @@
     margin: 10px auto;
 
     box-sizing: border-box;
-    border-radius: 10px;
+
     cursor: default;
 }
 
@@ -33,7 +33,7 @@
     justify-content: center;
     text-align: center;
     
-    border-radius: 5px;
+    border-radius: 3px;
     box-sizing: border-box;
 }
 
@@ -92,7 +92,7 @@
 
     padding: 0;
 
-    background-image: url(/img/fundo.jpg);
+    background-image: url(/img/fundo4.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -137,7 +137,7 @@
 
 }
 
-
+/* Texto principal */
 #plantas .div_texto{
     position: absolute;
     top: 0;
@@ -145,12 +145,10 @@
     line-height: 15px;
     letter-spacing: 2px;
 }
-
 #plantas .div_texto h1{
     font-size: 4em;
     font-style: italic;
 }
-
 
 /* CARDS das plantas */
 #plantas .all_cards{
@@ -189,7 +187,7 @@
     
 }
 
-/* textos e faces, CARDS */
+/* Frente & traz e textos, CARDS */
 #plantas .face2{
     box-sizing: border-box;
     padding: 20px;
@@ -201,7 +199,7 @@
     font-size: 35px;
 }
 #plantas .face1{
-    transition:.45s ;
+    transition:.7s ;
     border-radius: 5px;
 }
 #plantas .face1 h2{
@@ -209,8 +207,11 @@
     padding: 0;
 
     font-size: 2.5em;
+    width: 100%;
 
-    color: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.747);
+
+    background:rgb(255, 255, 255);
 }
 
 /* Reflexo e animação,CARDS */
@@ -230,15 +231,29 @@
 #plantas .card:hover .face1{
     height: 50px;
     font-size: .6em;
+    
+
 }
 
 /* fundo da frente, CARDS */
 #plantas .card:nth-child(1) .face1{
-   background:linear-gradient(45deg, rgb(51, 224, 158),rgb(99, 8, 160));
+   /* background:linear-gradient(45deg, rgb(51, 224, 158),rgb(99, 8, 160)); */
+
+    background: url(/img/domestica.jpg);
+    background-size: cover;
+
 }
 #plantas .card:nth-child(2) .face1{
-   background:linear-gradient(45deg, rgb(224, 51, 215),rgb(160, 69, 8));
+   /* background:linear-gradient(45deg, rgb(224, 51, 215),rgb(160, 69, 8)); */
+
+   background: url(/img/medicinal2.png);
+   background-size: cover;
+   background-position:center;
 }
 #plantas .card:nth-child(3) .face1{
-   background:linear-gradient(45deg, rgb(51, 91, 224),rgb(151, 25, 255));
+   /* background:linear-gradient(45deg, rgb(51, 91, 224),rgb(151, 25, 255)); */
+
+   background: url(/img/culinaria.jpg);
+   background-size: cover;
+   background-position: center;
 }

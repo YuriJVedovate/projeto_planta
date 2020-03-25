@@ -1,3 +1,4 @@
+
 /* fonte */
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
@@ -8,7 +9,7 @@ html{
 body{
     font-family: 'Poppins', sans-serif;
     
-    background:rgb(212, 212, 212);
+    background:rgb(226, 226, 226);
 
     /* background-image: url(/img/fundo4.png);
     background-repeat: no-repeat;
@@ -118,13 +119,13 @@ header{
     top: -20px;
     left: -3px;
 
-    margin-top: 16px;
+    margin-top: 16.6px;
     padding: 5px;
-    border-radius: 3px;
+    border-radius: 2px;
     
     visibility: hidden;
     opacity: 0;
-    transition: .2s;
+    transition: .25s;
     
     background: rgb(3, 73, 60);
 }
