@@ -1,0 +1,346 @@
+
+/* div que engloba tudo */
+#container{
+    max-width: 99%;
+    margin: 15px auto;
+
+    box-sizing: border-box;
+}
+
+/* seta de rolagem, para o menu */
+.seta_navegaçao img{
+    position: fixed;
+    bottom: 11.9%; 
+    right: 15px;    
+    
+    width: 50px;     
+
+    z-index: 1; 
+    cursor: pointer;  
+}
+.seta_navegaçao img:hover {
+    transform: scale(1.3);
+}
+
+/* todas sections */
+main .all_sections{
+    margin-bottom: 15px;
+    padding: 5px;
+
+    justify-content: center;
+    text-align: center;
+    
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+
+/* Animaçao do botao  */
+@keyframes bounce {
+    0%, 20%, 60%, 100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-25px);
+    }
+
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px)
+
+    }
+}
+
+/* SECTION 1, Home */
+#home{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 99vh;
+
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+    background-image: url(/img/fundo15.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#home::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.37);
+}
+
+/* textos do home */
+#home .div_textos {
+    margin: auto 0 150px;
+
+    z-index: 1;
+    text-shadow: 0 1px 20px black;
+}
+#home .div_textos h1{
+    margin: 0;
+    
+    text-shadow: 0 0 10px white, 0 0 30px white, 0 0 100px white;
+    font-size: 7.5em;
+    
+    line-height: 100px;
+    letter-spacing: 35px;
+}
+#home .div_textos h4{
+    font-size: 2em;
+    
+    letter-spacing: 4px;
+}
+#home .div_textos p{
+    font-size: 1.8em;
+   
+    margin: 10px;
+}
+/* Botao home, ver mais */
+.btn_home{
+    z-index: 0;
+}
+.btn {
+    margin-bottom: 30px;
+    padding: 15px;
+
+    border: 2.5px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    font-size: 1.5em;
+    font-weight: bold;
+
+    transition: .35s  ease-in-out;
+
+    color: white;
+    background:none;
+    
+}
+.btn:hover {
+    animation: bounce .9s;
+
+    color:black;
+    background:white;
+}
+
+
+/* SECTION 2, plantas */
+#plantas{
+    position: relative;
+    display: flex;
+    min-height: 99vh;
+
+    margin: 0;
+    padding: 0;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Texto principal */
+#plantas .div_texto{
+    position: absolute;
+    top: 0;
+
+    line-height: 15px;
+    letter-spacing: 2px;
+}
+#plantas .div_texto h1{
+    font-size: 7em;
+    font-style: italic;
+}
+#plantas .div_texto h4{
+    font-size: 1.6em;
+}
+
+/* CARDS das plantas */
+#plantas .all_cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 20px;
+
+    width: 1250px;
+    
+    margin: 200px auto 0;
+
+    cursor: pointer;
+}
+#plantas .card{
+    position: relative;
+    width: 350px;
+    height: 500px;
+
+    margin: 0 auto;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.815);
+    
+    background: white;
+    border-radius: 5px;
+}
+#plantas .atras{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* Frente & traz, CARDS */
+#plantas .face2{
+    box-sizing: border-box;
+    padding: 15px;
+}
+#plantas .face1{
+    transition:.7s ;
+    border-radius: 5px;
+}
+
+/* texto, CARDS */
+#plantas .face1 h2{
+    margin: 0;
+    padding: 0;
+
+    font-size: 2.5em;
+    width: 100%;
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.747);
+
+    background:rgb(255, 255, 255);
+}
+#plantas .face2 h2{
+    margin: 0 0 20px ;
+    padding: 0;
+    
+    font-size: 45px;
+}
+#plantas .face2 P {
+    font-size: 1.2em;
+    text-align: left;
+}
+
+/* Reflexo e animação,CARDS */
+#plantas .face1::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+
+    width: 50%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.038);
+}
+#plantas .card:hover .face1{
+    height: 50px;
+    font-size: .6em;
+    
+
+}
+
+/* fundo da frente, CARDS */
+#plantas .card:nth-child(1) .face1{
+    background: url(/img/domestica5.jpg);
+    background-size: cover;
+    
+
+}
+#plantas .card:nth-child(2) .face1{
+   background: url(/img/medicinal2.png);
+   background-size: cover;
+   background-position:center;
+}
+#plantas .card:nth-child(3) .face1{
+   background: url(/img/culinaria.jpg);
+   background-size: cover;
+   background-position: center;
+}
+
+/* Section 3, Plante tambem */
+
+#plante{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 99vh;
+
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+    
+    background-image: url(/img/fundo8.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#plante::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.158);
+}
+
+/* texto, Plante */
+#plante .texto_plante{
+    margin-top: 30px;
+
+    text-shadow: 0 1px 20px black;
+    z-index: 1;
+}
+#plante .texto_plante h1{
+    font-size: 4.5em;
+    font-style: italic;
+
+    line-height: 5px;
+}
+#plante .texto_plante h4 {
+    font-size: 2em;
+    font-weight: normal;
+}
+#plante .texto_plante p {
+    font-size: 1.3em;
+}
+#plante .texto_plante h3{
+    margin-top: 100px;
+    
+    font-size: 1.9em;
+    font-weight: normal;
+}
+
+/* imagens de evouluçao, plante */
+#plante .img_plante {
+    display: flex;
+    justify-content: space-around;
+}
+#plante .img_plante img{
+    width: 330px;
+   
+    margin: 0 5px 20px;
+    
+    border-radius: 3px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.479);
+}

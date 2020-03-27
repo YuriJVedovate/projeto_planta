@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <title>Projeto Planta</title>
+</head>
+
+<body>
+    <header>
+        <!-- menu , nav -->
+        <nav class="menu">
+            <a target="_blank" href="#" id="logo">Cultivas</a>
+            <ul>
+                <li> <a href="#home" class="active"> Home </a> </li>
+                <li class="sub"> <a href="#plantas"> Plantas </a>
+                    <label for="drop"><img src="/img/arrow.png" alt="seta do menu plantas"></label>
+                    <input type="checkbox" id="drop">
+                    <ul class="sub-menu">
+                        <li><a href="#">Domesticas</a></li>
+                        <li><a href="#">Medicinais</a></li>
+                        <li><a href="#">Comestiveis</a></li>
+                    </ul>
+
+                </li>
+                <li> <a href="#plante">Plante </a> </li>
+                <li> <a href="#contato"> Contato </a> </li>
+            </ul>
+
+            <div id="pesquisa">
+                <form class="form_pesquisa" method="">
+                    <input type="search" name="" class="input_pesquisa" placeholder="Pesquise sua planta">
+                    <input type="submit" value="" class="submit_pesquisa">
+                </form>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- container, pega pg toda menos nav -->
+        <div id="container">
+
+            <!-- seta de navegação -->
+            <div class="seta_navegaçao">
+                <a href="#"> <img id="seta" src="/img/Setinha.png"></a>
+            </div>
+
+            <!-- sesões do site, home , planta , plante, contatos -->
+            <section class="all_sections" id="home">
+                <div class="div_textos">
+                    <h1>Cultivas</h1>
+                    <h4><i>Cultive suas plantas, e realize seus sonhos</i></h4>
+                    <p>
+                        "Um dos piores erros que se pode cometer
+                        como jardineiro, <br> é pensar que
+                        se manda no jardim".
+
+                    </p>
+                </div>
+                <div class="btn_home">
+                    <a href="#plantas"><button type="button" class="btn">Venha conhecer</button></a>
+                </div>
+            </section>
+
+            <section class=" all_sections" id="plantas">
+                <div class="div_texto">
+                    <h1>Plantas</h1>
+                    <h4>escolha seu tipo de planta, com carinho.</h4>
+                </div>
+
+                <!-- cards, das plantas -->
+                <div class="all_cards">
+                    <div class="card">
+                        <div class="atras face2">
+                            <div class="textos">
+                                <h2>Pra casa</h2>
+                                <p> A presença de plantas em casa só traz benefícios:
+                                    além de deixar qualquer ambiente mais charmoso e aconchegante,
+                                    elas ainda melhoram a qualidade do ar.
+                                    E não se preocupe, não é preciso ter varanda
+                                    ou quintal para cultivar suas plantinhas.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="atras face1">
+                            <h2>Domestica</h2>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="atras face2">
+                            <div class="content">
+                                <h2>Rémedio</h2>
+                                <p> Medicamentos feitos a partir de folhas, sementes,
+                                    cascas, frutos e flores são sucesso de crítica e públic
+                                    o há milênios e constituem parte importante
+                                    da cultura dediversos povos.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="atras face1">
+                            <h2>Medicinal</h2>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="atras face2">
+                            <div class="content">
+                                <h2>Comestiveis</h2>
+                                <p>Lorem Ipsum is simply dummy text of the printing
+                                    and typesetting industry.Lorem Ipsum
+                                    Lorem Ipsum is simply dummy text of the
+                                </p>
+                            </div>
+                        </div>
+                        <div class="atras face1">
+                            <h2>Culinaria</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="all_sections" id="plante">
+                <div class="texto_plante">
+                    <h1>Ja pensou em plantar hoje?</h1>
+                    <h4>Comece a plantar agora mesmo, ajude o planeta</h4>
+                    <p>
+                        As árvores são indispensáveis na natureza por possuírem diversas finalidades.
+                        Elas auxiliam na purificação e umidade do ar, pois agem como sequestradoras de CO2,
+                        capturando gases tóxicos e devolvendo oxigênio para a atmosfera.
+                        Além disso, as árvores trazem outros benefícios para vários
+                        ecossistemas e espaços públicos.
+                    </p>
+                    <h3>🌱 Tente voce mesmo 🌱</h3>
+                </div>
+                <div class="img_plante">
+                    <img src="/img/semente2.jpg" alt="semente de planta">
+
+                    <img src="/img/muda2.jpg" alt="muda de planta">
+
+                    <img src="/img/muda3.jpg" alt="muda de planta">
+
+                    <img src="/img/muda4.jpg" alt="muda de planta">
+
+                </div>
+
+            </section>
+
+            <section class="all_sections" id="contato">
+                <h1>contactu</h1>
+                <h4>fabulam dubitat.</h4>
+
+                <form action="/">
+                    <input type="email" id="email" size="45" placeholder="Digite seu email" autocomplete="email"><br>
+                    <textarea id="Textarea" rows="10" cols="50" placeholder="Sua mensagem 🐥❤🐥 "></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <h3>Criado com 🐥 por FSY.</h3>
+    </footer>
+
+</body>
+
+</html>

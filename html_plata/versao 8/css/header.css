@@ -1,0 +1,183 @@
+
+/* fonte */
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+/* Geral */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+
+    cursor: default;
+    
+    background:rgb(226, 226, 226);
+
+    /* background-image: url(/img/fundo4.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white; */
+}
+
+
+/* Topo, parte da nav */
+header{
+    position: relative;
+    max-width: 99%;
+    height: 80px;
+    margin: 10px auto;
+
+    border-radius: 3px;
+    box-sizing: border-box;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.473);
+    
+    background-color: #004D40;
+}
+
+/* navegação, menu */
+.menu{
+    display: flex;
+    justify-content: space-between; 
+}
+
+#logo{
+    padding: 5px 10px;
+    
+    font-style: italic;
+    font-weight:bold;
+    font-size: 45px;
+    text-decoration: none;
+
+    color: white;
+}
+#logo:hover{
+    transform: scale(1.05);
+    text-shadow: 0 0 10px white, 0 0 30px white, 0 0 100px white;
+}
+
+.menu ul {
+    display: flex;
+}
+.menu ul li{
+    margin: 0 5px;
+    padding: 0 5px;
+    list-style: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 30px;
+
+    padding: 10px;
+    
+    color: white;
+}
+.menu ul li a:hover {
+    border-radius: 5px;
+    text-shadow: 0 0 10px white, 0 0 30px white, 0 0 100px white;
+
+    transition: .4s;
+    color: white
+}
+
+/* sub, Plantas */
+.menu .sub{
+    position: relative;
+}
+.menu .sub img{
+    position: relative;
+    top: 3px;
+    right: 12px;
+    
+    width: 13px;
+
+    cursor: pointer;
+    padding: 2px 5px;
+}
+.menu .sub input{
+    display: none;
+}
+.menu .sub input:checked  + .sub-menu{
+    top: 30px;
+
+    visibility: visible;
+    opacity: 1;
+    transition: .19s;
+    
+    z-index: 1;
+}
+
+/* sub-menu, Plantas */
+.menu .sub-menu{
+    position: absolute;
+    display: block;
+    top: -20px;
+    left: -10px;
+
+
+    margin-top: 35px;
+    padding: 5px;
+    border-radius: 2px;
+    
+    visibility: hidden;
+    opacity: 0;
+    transition: .25s;
+    
+    background: rgb(3, 73, 60);
+}
+.menu .sub-menu li a{
+    display: block;
+
+    padding: 5px;
+    margin:0 0 15px;
+    
+    border-bottom: 2px solid rgba(0, 0, 0, 0.068);
+    font-size: 22px;
+    line-height: 25px;
+}
+.menu .sub-menu li a:hover{
+    color: white;
+}
+/* barra de pesquisa */
+#pesquisa{
+    position: relative;
+    
+    height: 45px;
+    
+    margin: 16px 10px;
+    border-radius: 10px;
+
+    background: rgba(248, 248, 248, 0.959);
+
+}
+#pesquisa .form_pesquisa{
+    margin-top: 1px;
+}
+#pesquisa .input_pesquisa{
+    margin: 0  20px;
+
+    background: none;
+    border: none;
+    outline: none;
+}
+#pesquisa .submit_pesquisa{
+    position: relative;
+    top: 13px;
+    right: 15px;
+
+    width: 15px;
+    border: none;
+    
+    cursor: pointer;
+    
+    background:url(/img/lupa2.ico);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#pesquisa .submit_pesquisa:hover {
+    transform: scale(1.3);
+}
